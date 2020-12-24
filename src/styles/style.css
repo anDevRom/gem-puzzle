@@ -1,0 +1,187 @@
+@import "roboto.css"; 
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(80, 57, 57);
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+}
+
+.button {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    background-color: rgb(80, 57, 57);
+    border: none;
+    padding: 5px;
+    transition: color .3s;
+}
+
+.button:hover {
+    color: rgb(80, 57, 57);
+    background-color: white;
+    cursor: pointer;
+}
+
+.stat-container {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    align-items: center;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.puzzles-field {
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(173, 171, 136);
+    border-radius: 5px;
+    display: grid;
+}
+
+.cell {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.puzzle {
+    /*background-image: url('https://github.com/irinainina/image-data/blob/master/box/1.jpg?raw=true');*/
+    width: 95%;
+    height: 95%;
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.puzzle:hover {
+    cursor: pointer;
+}
+
+.puzzles-field_3 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.puzzles-field_4 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.puzzles-field_5 {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.puzzles-field_6 {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.puzzles-field_7 {
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.puzzles-field_8 {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.options-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+}
+
+.score-content-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+
+}
+
+.score-results-table {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    margin-bottom: 30px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.text-for-cell {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.congratulation-message-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .puzzles-field {
+        width: 300px;
+        height: 300px;
+    }
+
+    .options-block {
+        width: 300px;
+    }
+
+    .stat-container {
+        width: 300px;
+    }
+}
